@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile
 run:
-   worker: python3 hunter-botrun.py
+   worker: python3 hunterbotrun.py
