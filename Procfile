@@ -1,1 +1,1 @@
-worker: hunter-botrun.py
+worker: hunterbotrun.py
