@@ -57,4 +57,4 @@ RUN wget https://raw.githubusercontent.com/KeinShin/Black-Lightning/master/requi
 #Start Fumkin
 RUN pip3 install -r requirements.txt
 
-CMD ["python3","hunter-botrun.py"]
+CMD ["python3","hunterbotrun.py"]
