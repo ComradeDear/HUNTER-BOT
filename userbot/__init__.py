@@ -17,7 +17,6 @@ from telethon.sessions import StringSession
 
 from userbot.thunderconfig import Config
 
-from .function import thunderfunction as topfunc
 
 StartTime = time.time()
 telever = "5.0"
