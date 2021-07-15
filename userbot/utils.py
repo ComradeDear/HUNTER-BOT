@@ -6,7 +6,7 @@ from pathlib import Path
 
 from telethon import events
 
-from userbot import CMD_LIST, LOAD_PLUG, bot
+from userbot import CMD_LIST, LOAD_PLUG, 
 from userbot.Config import Var
 from userbot.thunderconfig import Config
 
