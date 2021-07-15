@@ -362,7 +362,7 @@ from time import gmtime, strftime
 
 from telethon import events
 
-from userbot import bot
+from userbot import 
 
 
 def register(**args):
