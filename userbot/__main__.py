@@ -7,7 +7,7 @@ from sys import argv
 import telethon.utils
 from telethon import TelegramClient
 
-from userbot import CMD_HNDLR, bot
+from userbot import CMD_HNDLR,
 from userbot.Config import Var
 from userbot.thunderconfig import Config
 from userbot.utils import load_assistant, load_module, start_assistant
