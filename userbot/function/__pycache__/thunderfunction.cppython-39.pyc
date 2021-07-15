@@ -1,0 +1,6 @@
+a
+
+    åÉ·_ä  ã                   @   s2   d dl Z d dlZdd„ Zdejej fdd„ZdS )é    Nc                 C   sF   z,|   |¡t|ƒ }|   ||¡}| ||… W S  ty@   Y dS 0 d S )NÚ )ÚindexÚlenÚ
+ValueError)ÚsÚfirstÚlastÚstartÚend© r   ú+D:\Dark\userbot\function\thunderfunction.pyÚstark_finder   s    r
+   é@   c                    s   d  ‡ fdd„t| ƒD ƒ¡S )Nr   c                 3   s   | ]}t  ˆ ¡V  qd S )N)ÚrandomÚchoice)Ú.0Ú_©Úcharsr   r   Ú	<genexpr>   ó    zid_generator.<locals>.<genexpr>)ÚjoinÚrange)Úsizer   r   r   r   Úid_generator   s    r   )r   Ústringr
+   Úascii_uppercaseÚdigitsr   r   r   r   r   Ú<module>   s   
