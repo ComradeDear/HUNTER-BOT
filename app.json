@@ -10,7 +10,6 @@
     "productivity"
   ],
   "repository": "https://github.com/ComradeDear/HUNTERBOT/",
-  "website": "https://github.com/ComradeDear/HUNTERBOT/",
   "success_url": "https://t.me/hunterbot_support",
   "stack": "container",
   "env": {
