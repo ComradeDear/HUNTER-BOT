@@ -16,12 +16,28 @@
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
-      "value": "ANYTHING"                                                                                                         
-      
+      "value": "ANYTHING"
+    },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Where downloaded files will go.",
+      "value": "./userbot/DOWNLOADS/",
+      "required": false
+    },
+    "F_BAN_LOGGER_GROUP": {
+      "description": "Put Group id Same As PRIVATE_GROUP_ID.",
+      "value": "",
+      "required": false
+    },
+
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @hellboi_atul.",
+      "description": "Fill your Full name or Username like @dear_comradee.",
       "value": "",
       "required": true
+    },
+    "AUTONAME": {
+      "description": "Fill your Name which will show on .autoname cmd nd used in .revert cmd when u use .clone.",
+      "value": "",
+      "required": false
     },
     "ALIVE_MSG": {
       "description": "Set Custom awake Message When entering .awake command.",
@@ -30,17 +46,47 @@
     },
     "ALIVE_PHOTTO": {
       "description": "Let it be what it is(skip)..or you can change the link according to your convince..this link is useful for `.awake` command.",
-      "value": "https://telegra.ph/file/0d0fafe17acca1c51b42d.jpg",
+      "value": "https://telegra.ph/file/ed2b104b8a75ac058c097.jpg",
       "required": true
+    },
+    "DEFAULT_BIO": {
+      "description": "Put Your Telegram Bio Here Required For Auto Bio.",
+      "value": "",
+      "required": false
     },
     "PMPERMIT_PIC": {
       "description": "put here any telegraph media link for pmpermit custom pic.",
-      "value": "https://telegra.ph/file/ad8430d78a8e1adb3d8ea.jpg",
+      "value": "https://telegra.ph/file/ed2b104b8a75ac058c097.jpg",
       "required": true
+    },
+    "PM_PERMIT_GROUP_ID": {
+      "description": "Put an Group Id Same As PRIVATE_GROUP_ID Required For Pmpermit plugin.",
+      "value": "",
+      "required": false
+    },
+    "CUSTOM_PMPERMIT": {
+      "description": "Custom middle pm permit text... May skip..doesn't really matter...",
+      "value": "",
+      "required": false
+    },
+    "PM_DATA": {
+      "description": "Write DISABLE if you want to disable pm permit else leave it blank...",
+      "value": "",
+      "required": false
     },
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
+    },
+    "REM_BG_API_KEY": {
+      "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
+      "value": "",
+      "required": false
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
@@ -62,15 +108,35 @@
       "description": "Create a group where u want ur tags logs will come add rose bot then get id ,set value, if not then leave blank  ",
       "value": "",
       "required" : true
+   },
+    "OCR_SPACE_API_KEY": {
+      "description": "Needed for ocr.py, get it from ocr.space .",
+      "value": "",
+      "required": false
     },
     "PM_LOGGR_BOT_API_ID": {
        "description": "for login private messages create a private channel and do .get_id and add that id", 
        "value": ""
     }, 
     "STRING_SESSION": {
-      "description": "Get this value by running apt-get update && apt-get upgrade -y && pkg upgrade -y && pkg install python wget -y && wget https://raw.githubusercontent.com/ComradeDear/HUNTERBOT/master/telesetup.py && pip3 install telethon && python3 telesetup.py ...or give any telethon string session ",
+      "description": "Get this value by running [ apt-get update && apt-get upgrade -y && pkg upgrade -y && pkg install python wget -y && wget https://raw.githubusercontent.com/ComradeDear/HUNTERBOT/master/telesetup.py && pip3 install telethon && python3 telesetup.py ] ..or give any telethon string
       "value": "",
       "required": true
+    },
+    "GITHUB_ACCESS_TOKEN": {
+      "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
+      "value": "",
+      "required": false
+    },
+    "GIT_REPO_NAME": {
+      "description": "Your repo name Example: hellboi-atul/hellboi-atul, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
+      "value": "",
+      "required": false
     },
     "HEROKU_API_KEY": {
       "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
@@ -87,10 +153,29 @@
       "value": "",
       "required": true
     },
+    "CHROME_BIN": {
+      "description": "For Carbon.py. Leave as it is. ",
+      "value": "/app/.apt/usr/bin/google-chrome",
+      "required": false
+    },
+    "CHROME_DRIVER": {
+      "description": "For Carbon.py. Leave as it is. ",
+      "value": "/app/.chromedriver/bin/chromedriver",
+      "required": false
+    },
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the username of your bot",
       "value": "",
       "required": true
+    },
+    "DOWNLOAD_PFP_URL_CLOCK": {
+      "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
+      "value": "",
+      "required": false
+    },
+    "OPEN_WEATHER_MAP_APPID": {
+      "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
+      "required": false
     },
     "NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD": {
       "description": " Set The Amount Of Buttons Displayed In Help Command",
@@ -105,7 +190,22 @@
     "EMOJI_TO_DISPLAY_IN_HELP": {
       "description": "Set The emojies You Want to Add In Help Command You Can Add Multiple Emojies too!!",
       "value": "📨",
-      "required": true 
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "Put The Id of that person whom u want to give access to use ur bot",
+      "value": "",
+      "required": false
+    }, 
+    "TZ": {
+      "description": "Required for Correct Time for autopic get from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+      "value": "Asia/Kolkata",
+      "required": false
+    },
+    "REDIRECTCHANNEL": {
+      "description": "Put You Channel Username Reflecting Your Info or Your Tags Etc",
+      "value": "",
+      "required": false 
     }
   },
   "addons": [
